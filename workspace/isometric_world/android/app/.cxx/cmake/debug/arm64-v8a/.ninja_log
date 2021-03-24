@@ -1,0 +1,4 @@
+# ninja log v5
+1	31	1616601565	CMakeFiles/map.dir/src/c/utils.c.o	a9384b9af830ecac
+1	39	1616601565	CMakeFiles/map.dir/src/c/map.c.o	dafa63c6e872b48
+39	54	1616601565	/home/developer/workspace/isometric_world/build/app/intermediates/cmake/debug/obj/arm64-v8a/libmap.so	990cd0e950ffb7da

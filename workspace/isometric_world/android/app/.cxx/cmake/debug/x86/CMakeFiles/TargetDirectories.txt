@@ -1,0 +1,3 @@
+/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86/CMakeFiles/map.dir

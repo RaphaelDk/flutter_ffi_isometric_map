@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/developer/workspace/isometric_world/android/app/CMakeLists.txt",
+    "/home/developer/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/home/developer/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "map-Debug-x86": {
+      "artifactName": "map",
+      "buildCommand": "/home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86\" map",
+      "abi": "x86",
+      "output": "/home/developer/workspace/isometric_world/build/app/intermediates/cmake/debug/obj/x86/libmap.so",
+      "runtimeFiles": []
+    }
+  }
+}

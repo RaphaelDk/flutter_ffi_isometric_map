@@ -1,0 +1,7 @@
+Executable : /home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/x86_64
+map
+jvmArgs : 
+

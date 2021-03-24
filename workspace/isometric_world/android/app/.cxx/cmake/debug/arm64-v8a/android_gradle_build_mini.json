@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/home/developer/workspace/isometric_world/android/app/CMakeLists.txt",
+    "/home/developer/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/home/developer/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "map-Debug-arm64-v8a": {
+      "artifactName": "map",
+      "buildCommand": "/home/developer/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/arm64-v8a\" map",
+      "abi": "arm64-v8a",
+      "output": "/home/developer/workspace/isometric_world/build/app/intermediates/cmake/debug/obj/arm64-v8a/libmap.so",
+      "runtimeFiles": []
+    }
+  }
+}
