@@ -1,4 +1,0 @@
-ninja: Entering directory `/home/developer/workspace/isometric_world/android/app/.cxx/cmake/debug/armeabi-v7a'
-[1/3] Building C object CMakeFiles/map.dir/src/c/utils.c.o
-[2/3] Building C object CMakeFiles/map.dir/src/c/map.c.o
-[3/3] Linking C shared library /home/developer/workspace/isometric_world/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libmap.so

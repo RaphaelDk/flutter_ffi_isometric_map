@@ -1,7 +1,0 @@
-# ninja log v5
-3	62	1616601565	CMakeFiles/map.dir/src/c/utils.c.o	cc05b003e6985182
-0	70	1616601565	CMakeFiles/map.dir/src/c/map.c.o	217d029a091274cb
-70	85	1616601565	/home/developer/workspace/isometric_world/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libmap.so	930002fb25d73017
-2	171	1616603010	CMakeFiles/map.dir/src/c/utils.c.o	cc05b003e6985182
-1	186	1616603010	CMakeFiles/map.dir/src/c/map.c.o	217d029a091274cb
-186	222	1616603010	/home/developer/workspace/isometric_world/build/app/intermediates/cmake/debug/obj/armeabi-v7a/libmap.so	930002fb25d73017
