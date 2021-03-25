@@ -8,7 +8,9 @@ The aim of this project is to provide a starting point for someone who'd like to
 I tried to go as deep as possible with the possibilities offered by Dart:ffi (map.dart & map_test.dart files).  
 Don't forget the star if I helped you !
 
-![app-screenshot](images/screenshot.jpg)  
+<p align="center">
+    <img src="images/screenshot.jpg" alt="Logo" width="200" height="450">
+</p> 
 The 2D isometric map is created with C & displayed with the Flutter's CustomPainter. 
 
 ### Built With
