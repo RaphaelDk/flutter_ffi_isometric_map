@@ -6,7 +6,7 @@ main() => runApp(MyApp());
 
 class DrawTriangleShape extends CustomPainter {
   Paint painter = Paint();
-  Map map = Map(35);
+  Map map = Map(100);
 
   DrawTriangleShape() {
     painter.style = PaintingStyle.fill;
@@ -15,9 +15,9 @@ class DrawTriangleShape extends CustomPainter {
   void drawTriangle(Canvas canvas, Tile tile) {
     Path path = Path();
 
-    path.moveTo(tile.a.x, tile.a.y - 400);
-    path.lineTo(tile.b.x, tile.b.y - 400);
-    path.lineTo(tile.c.x, tile.c.y - 400);
+    path.moveTo(tile.a.x, tile.a.y - 450);
+    path.lineTo(tile.b.x, tile.b.y - 450);
+    path.lineTo(tile.c.x, tile.c.y - 450);
     path.close();
 
     painter.color =

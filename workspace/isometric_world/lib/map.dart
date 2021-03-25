@@ -36,7 +36,7 @@ class Tile extends Struct {
 }
 
 class Map {
-  int mapSize = 35;
+  int mapSize;
   Pointer<Double> map3D;
   Pointer<Coordinate> map2D;
   Pointer<Tile> mapTilePointer;

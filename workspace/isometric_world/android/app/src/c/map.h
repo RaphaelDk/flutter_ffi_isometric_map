@@ -6,7 +6,7 @@
 #include <string.h>
 #include <math.h>
 
-#define TILE_SIZE 25
+#define TILE_SIZE 10
 
 typedef struct Coordinate_s {
     double x;
@@ -31,6 +31,9 @@ typedef struct Tile_s {
     Coordinate point_c;
     Color color;
 } Tile;
+
+// PERLIN
+float perlin(float x, float y);
 
 // UTILS
 Coordinate3d point_from_index(const double *map_3d, int index, int map_size);

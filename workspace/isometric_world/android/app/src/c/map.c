@@ -5,7 +5,7 @@ double *create_3d_map(int map_size)
     double *map_3d = malloc(sizeof(double) * map_size * map_size);
 
     for (int i = 0; i < map_size * map_size; i++) {
-        map_3d[i] = 0;
+        map_3d[i] = perlin((int)(i / map_size) * 0.15, (int)(i % map_size) * 0.15) * 3;
     }
     return map_3d;
 }
@@ -53,25 +53,44 @@ int get_extrem_point_index(const double *map_3d, int square[4])
     return extreme_index;
 }
 
-float get_diffuse_light(const double *map_3d, int map_size, int index_a, int index_b, int index_c)
+float get_diffuse_light(Coordinate3d *tile_center, Coordinate3d *A, Coordinate3d *B, Coordinate3d *C)
 {
-    Coordinate3d A = point_from_index(map_3d, index_a, map_size);
-    Coordinate3d B = point_from_index(map_3d, index_b, map_size);
-    Coordinate3d C = point_from_index(map_3d, index_c, map_size);
-    Coordinate3d normal = plane_normal(&C, &B, &A);
+    Coordinate3d normal = plane_normal(C, B, A);
     Coordinate3d sun = (Coordinate3d){20, 13, 6};
-    Coordinate3d tile = triangle_center(&A, &B, &C);
-    Coordinate3d light = vector_from_points(&tile, &sun);
+    Coordinate3d light = vector_from_points(tile_center, &sun);
 
     return vectors_cos_angle(&normal, &light);
 }
 
+Color tile_color(double light, double high)
+{
+    Color color = {255, 255, 255};
+
+    if (high < -0.6) {
+        color = (Color){155, 255, 255};
+    } else if (high < -0.25) {
+        color = (Color){255, 255, 30};
+    } else if (high < 0.55) {
+        color = (Color){66, 255, 66};
+    } else if (high < 1.25) {
+        color = (Color){128, 128, 128};
+    }
+    return (Color){floor(color.r * light), floor(color.g * light), floor(color.b * light)};
+}
+
 Tile create_tile(const double *map_3d, const Coordinate *map_2d, int map_size, int index_a, int index_b, int index_c)
 {
-    double diffuse_light = get_diffuse_light(map_3d, map_size, index_a, index_b, index_c);
+    Coordinate3d A = point_from_index(map_3d, index_a, map_size);
+    Coordinate3d B = point_from_index(map_3d, index_b, map_size);
+    Coordinate3d C = point_from_index(map_3d, index_c, map_size);
+
+    Coordinate3d tile_center = triangle_center(&A, &B, &C);
+
+    double diffuse_light = get_diffuse_light(&tile_center, &A, &B, &C);
     double ambiant_light = 0.3;
     double light = min(ambiant_light + diffuse_light, 1.0);
-    Color color = {floor(0 * light), floor(200 * light), floor(0 * light)};
+
+    Color color = tile_color(light, tile_center.z);
 
     return (Tile){map_2d[index_a], map_2d[index_b], map_2d[index_c], color};
 }
