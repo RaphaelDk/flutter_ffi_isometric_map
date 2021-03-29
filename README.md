@@ -39,7 +39,7 @@ The second tool you need is **VS Code** with two extensions : Remote - Container
 ### Installation
 
 1. Clone the repo
-2. Click the bottom left *Remote - Containers* icon and select *Open Folder in Container* with the repo as folder.
+2. On VS, click the bottom left *Remote - Containers* icon and select *Open Folder in Container* with the repo as folder.
 3. Plug you device & run /lib/main.dart
 
 Et voilà !
